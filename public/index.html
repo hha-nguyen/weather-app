@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>The weather here</h1>
+    <div><a href="/">check in</a> | <a href="/checkins">list</a></div>
+    <p>
+      latitude: <span id="latitude"></span>°<br />
+      longitude: <span id="longitude"></span>°
+    </p>
+    <p>
+      the weather at <span id="lat"></span>°, <span id="lon"></span>° is <span id="description"></span> with a temperature of <span id="temperature"></span> degrees celsius. <br>
+      The air quality index (aqi) in your city (<span id="aq_city"></span>) is <span id="aq_aqi"></span> with paticulate matter (<span id="aq_pm"></span>). Your air status is <span id="aq_status"></span> last read on <span id="aq_date"></span>.
+    </p>
+    <button id="checkin">check in</button>
+    <script src="sketch.js"></script>
+  </body>
+</html>
